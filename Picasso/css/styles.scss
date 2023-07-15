@@ -1,0 +1,463 @@
+/*change palettes here*/
+$palette1:rgb(23, 26, 194);
+$palette2:rgb(237, 242, 243);
+$palette3:rgb(10, 11, 83);
+$palette4:rgb(228, 95, 7);
+$palette5:rgb(0, 0, 0);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+
+img{
+    width: 100%;
+}
+.full-container{
+    max-width: 100vw;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap: 1rem;
+}
+
+
+
+
+/*columns*/
+.w{
+    grid-column: span 10;
+}
+
+.w-1{
+    grid-column: span 1;
+}
+.w-2{
+    grid-column: span 2;
+}
+.w-3{
+    grid-column: span 3;
+}
+.w-4{
+    grid-column: span 4;
+}
+.w-5{
+    grid-column: span 5;
+}
+.w-6{
+    grid-column: span 6;
+}
+.w-7{
+    grid-column: span 7;
+}
+.w-8{
+    grid-column: span 8;
+}
+.w-9{
+    grid-column: span 9;
+}
+
+
+/*Padding*/
+.p-1{
+    padding: 1rem;
+}
+.p-2{
+    padding: 2rem;
+}
+.p-3{
+    padding: 3rem;
+}
+.p-4{
+    padding: 4rem;
+}
+.p-5{
+    padding: 5rem;
+}
+
+.pt-1{
+    padding-top: 1rem;
+}
+.pt-2{
+    padding-top: 2rem;
+}
+.pt-3{
+    padding-top: 3rem;
+}
+.pt-4{
+    padding-top: 4rem;
+}
+.pt-5{
+    padding-top: 5rem;
+}
+
+.pb-1{
+    padding-bottom: 1rem;
+}
+.pb-2{
+    padding-bottom: 2rem;
+}
+.pb-3{
+    padding-bottom: 3rem;
+}
+.pb-4{
+    padding-bottom: 4rem;
+}
+.pb-5{
+    padding-bottom: 5rem;
+}
+
+.pl-1{
+    padding-left: 1rem;
+}
+.pl-2{
+    padding-left: 2rem;
+}
+.pl-3{
+    padding-left: 3rem;
+}
+.pl-4{
+    padding-left: 4rem;
+}
+.pl-5{
+    padding-left: 5rem;
+}
+
+.pr-1{
+    padding-right:  1rem;
+}
+.pr-2{
+    padding-right:  2rem;
+}
+.pr-3{
+    padding-right:  3rem;
+}
+.pr-4{
+    padding-right:  4rem;
+}
+.pr-5{
+    padding-right:  5rem;
+}
+
+
+
+/*Margin*/
+.m-1{
+    margin: 1rem;
+}
+.m-2{
+    margin: 2rem;
+}
+.m-3{
+    margin: 3rem;
+}
+.m-4{
+    margin: 4rem;
+}
+.m-5{
+    margin: 5rem;
+}
+
+.mt-1{
+    margin-top: 1rem;
+}
+.mt-2{
+    margin-top: 2rem;
+}
+.mt-3{
+    margin-top: 3rem;
+}
+.mt-4{
+    margin-top: 4rem;
+}
+.mt-5{
+    margin-top: 5rem;
+}
+
+.mb-1{
+    margin-bottom: 1rem;
+}
+.mb-2{
+    margin-bottom: 2rem;
+}
+.mb-3{
+    margin-bottom: 3rem;
+}
+.mb-4{
+    margin-bottom: 4rem;
+}
+.mb-5{
+    margin-bottom: 5rem;
+}
+
+.ml-1{
+    margin-left: 1rem;
+}
+.ml-2{
+    margin-left: 2rem;
+}
+.ml-3{
+    margin-left: 3rem;
+}
+.ml-4{
+    margin-left: 4rem;
+}
+.ml-5{
+    margin-left: 5rem;
+}
+
+.mr-1{
+    margin-right:  1rem;
+}
+.mr-2{
+    margin-right:  2rem;
+}
+.mr-3{
+    margin-right:  3rem;
+}
+.mr-4{
+    margin-right:  4rem;
+}
+.mr-5{
+    margin-right:  5rem;
+}
+
+/*Colors*/
+.palette-1{
+    color:$palette1;
+}
+
+.palette-2{
+    color:$palette2;
+}
+.palette-3{
+    color:$palette3;
+}
+.palette-4{
+    color:$palette4;
+}
+.palette-5{
+    color:$palette5;
+}
+
+
+/*Colors*/
+.bg-palette-1{
+    background-color:$palette1;
+}
+
+.bg-palette-2{
+    background-color:$palette2;
+}
+.bg-palette-3{
+    background-color:$palette3;
+}
+.bg-palette-4{
+    background-color:$palette4;
+}
+.bg-palette-5{
+    background-color:$palette5;
+}
+
+
+/*Buttons*/
+.btn{
+    width:5rem;
+    padding: 1rem;
+    color: white;
+    border-radius: 0.7rem;
+
+    border: none;
+    transition: 0.2s;
+
+    &:hover{
+        transform: scaleX(0.95);
+        cursor: pointer;
+    }
+}
+
+.outline-palette-1{
+    border: 1px solid $palette1;
+    background: none;
+    color: $palette1;
+}
+
+
+.outline-palette-2{
+    border: 1px solid $palette2;
+    background: none;
+    color: $palette2;
+}
+
+.outline-palette-3{
+    border: 1px solid $palette3;
+    background: none;
+    color: $palette3;
+}
+
+.outline-palette-4{
+    border: 1px solid $palette4;
+    background: none;
+    color: $palette4;
+}
+
+.outline-palette-5{
+    border: 1px solid $palette5;
+    background: none;
+    color: $palette5;
+}
+
+/*Navbar*/
+.fixed{
+    position: fixed;
+    
+}
+
+.sticky{
+    position: fixed;
+    top:0;
+    transition: 0.3s;
+}
+
+
+@media only screen and (max-width:630px){
+    header{
+        height: 4rem;
+        width: 100%;
+        .container{
+            display: flex;
+            flex-direction: column;
+            .menu{
+                position: absolute;
+                right:0
+            }
+            
+            nav{
+                position: fixed;
+                background-color: gray;
+                width: 100%;
+                display: none;
+
+                
+                ul{
+                    li{
+                        display: block;
+                        padding: 1.5rem 1rem;
+                    }
+                    
+                }
+                .close{
+                    float: right;
+                    
+                }
+            }
+            .open-nav{
+                display: block;
+            }
+            
+        }
+    }
+    
+}
+@media only screen and (min-width:631px){
+    header{
+        width: 100%;
+        height: 5rem;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            .brand{
+                padding: 1rem;
+                font-size: 1.5rem;
+            }
+            .menu{
+                display: none;
+            }
+            
+            nav{
+                ul{
+                    display: flex;
+                    align-items: center;
+                    li{
+                        display: block;
+                        padding: 1rem;
+                    }
+                    
+                }
+                .close{
+                    display: none;  
+                }
+            }
+        }
+    }
+}
+
+/*forms*/
+form{
+    border: 1px solid gray;
+    border-radius: 0.4rem;
+}
+
+
+
+input{
+    width:90%;
+    height: 2rem;
+    border-radius: 0.4rem;
+    border: 3px solid gray;
+
+    &:focus{
+        outline: none;
+        border: 3px solid gray;
+    }
+}
+
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    .hero-text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .hero-title{
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero-sub{
+            color: gray;
+        }
+    }
+    .hero-image{
+        flex: 1;
+        
+        img{
+            min-width:20rem
+
+        }
+        @media only screen and (max-width:320px) {
+            img{
+                min-width:10rem
+            }
+        }
+    } 
+}
